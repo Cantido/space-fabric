@@ -18,7 +18,7 @@ sheet(x_length, y_length);
 
 module sheet(links_count_x, links_count_y) {
   for (x=[0:links_count_x-1]) {
-    for (y=[0:links_count_x-1]) {
+    for (y=[0:links_count_y-1]) {
       translate([link_spacing * x, link_spacing * y, 0]) link();
     }
   }
